@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "DetailViewController.h"
+#import "TotoStore.h"
+
+
 
 @interface AppDelegate ()
 
@@ -27,6 +30,17 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
+ 
+    BOOL success = [[TotoStore sharedStore] saveChanges];
+    if (success) {
+        NSLog(@"saved teh list buddeh");
+    }
+    else {
+        NSLog(@"looks like ya fuckd it up");
+    }
+    
+    
+    
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }

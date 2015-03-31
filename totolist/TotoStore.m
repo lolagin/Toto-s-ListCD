@@ -29,10 +29,12 @@
 - (instancetype)initPrivate {
     self = [super init];
     if (self){
-        _privateItems = [[NSMutableArray alloc] init];
-        [_privateItems addObject:[Toto initSample]];
-        [_privateItems addObject:[Toto initSample]];
-        
+
+        NSString *path = [self itemArchivePath];
+        _privateItems = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+        if (!_privateItems){
+            _privateItems = [[NSMutableArray alloc]init];
+        }
     }
     return self;
 }
@@ -62,33 +64,21 @@
     [self.privateItems removeObjectAtIndex:fromIndex];
     [self.privateItems insertObject:todoItem atIndex:toIndex];
 }
-+(UIImage *)imageForToto:(Toto*)toto{
-        NSString *imageName = [[NSString alloc]init];
-    if (toto.priority > 9) {
-        imageName = @"high_priority";
-    }
-    else if (toto.priority <= 9 && toto.priority >= 7) {
-        imageName = @"mid-high_priority";
-    }
-    else if (toto.priority <= 6 && toto.priority >= 4) {
-        imageName = @"mid_priority";
-    }
-    else if (toto.priority < 4 && toto.priority >= 1) {
-        imageName = @"low_priority";
-    }
-    else if (toto.priority < 1) {
-        imageName = @"alarm_clock";
-    }
-    
-    
-    if (toto.completed == true) {
-        [imageName stringByAppendingString:@"_filled"];
-    }
-    
-    UIImage *wtfImage = [UIImage imageNamed:imageName];
-    return wtfImage;
+
+
+
+- (NSString *)itemArchivePath {
+    NSArray *documentDirectories = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentDirectory = [documentDirectories firstObject];
+    return [documentDirectory stringByAppendingPathComponent:@"items.archive"];
 }
 
+
+
+-(BOOL)saveChanges{
+    NSString *path = [self itemArchivePath];
+    return [NSKeyedArchiver archiveRootObject:self.privateItems toFile:path];
+}
 
 
 

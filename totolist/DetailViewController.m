@@ -37,7 +37,7 @@
     if (self.toto) {
         self.titleLabel.text = self.toto.title;
         self.descriptionLabel.text = self.toto.details;
-        self.iconView.image = [TotoStore imageForToto:self.toto];
+        self.iconView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",self.toto.priorityImageName]];
         self.iconView.backgroundColor = [UIColor whiteColor];
         self.titleLabel.backgroundColor = [UIColor whiteColor];
         self.descriptionLabel.backgroundColor = [UIColor whiteColor];

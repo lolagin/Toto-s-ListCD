@@ -116,7 +116,8 @@
     cell.titleLabel.text = totoItem.title;
     cell.descriptionLabel.text = totoItem.details;
     cell.priorityLabel.text = [NSString stringWithFormat:@"%ld",(long)totoItem.priority];
-    cell.thumbnailView.image = [TotoStore imageForToto:totoItem];
+    cell.thumbnailView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",totoItem.priorityImageName]];
+    cell.backgroundView.alpha = 0.4;
 
     return cell;
 

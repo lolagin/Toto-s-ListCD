@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 @class Toto;
-@interface TotoStore : NSObject
+@interface TotoStore : NSObject 
 
 @property(nonatomic, readonly, copy) NSArray *allItems;
 + (instancetype)sharedStore;
@@ -19,7 +19,7 @@
 - (void)moveItemAtIndex: (NSUInteger)fromIndex
                 toIndex: (NSUInteger)toIndex;
 
-+(UIImage *)imageForToto:(Toto*)toto;
+-(BOOL)saveChanges;
 
 
 
