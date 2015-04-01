@@ -15,7 +15,6 @@
 		6D04B9601AC301F900F41859 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D04B95F1AC301F900F41859 /* Images.xcassets */; };
 		6D04B9631AC301F900F41859 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D04B9611AC301F900F41859 /* LaunchScreen.xib */; };
 		6D04B96F1AC301FA00F41859 /* totolistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D04B96E1AC301FA00F41859 /* totolistTests.m */; };
-		6D04B97A1AC348C100F41859 /* Toto.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D04B9791AC348C100F41859 /* Toto.m */; };
 		6D04B97E1AC3572800F41859 /* backgroundamerica.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D04B97D1AC3572800F41859 /* backgroundamerica.png */; };
 		6D04B9811AC3580A00F41859 /* TotoStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D04B9801AC3580A00F41859 /* TotoStore.m */; };
 		6D04B9851AC3651F00F41859 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D04B9831AC3651F00F41859 /* CustomTableViewCell.m */; };
@@ -30,6 +29,9 @@
 		6D04B9CD1AC48C0600F41859 /* mid_priority.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D04B9CC1AC48C0600F41859 /* mid_priority.png */; };
 		6D04B9CF1AC48C8B00F41859 /* mid-high_priority_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D04B9CE1AC48C8B00F41859 /* mid-high_priority_filled.png */; };
 		6D04B9D11AC48C9000F41859 /* mid-high_priority.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D04B9D01AC48C9000F41859 /* mid-high_priority.png */; };
+		6D1D975F1ACB88DB00CBCAB7 /* Totolist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D975D1ACB88DB00CBCAB7 /* Totolist.xcdatamodeld */; };
+		6D1D97621ACB930700CBCAB7 /* Toto.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D97611ACB930700CBCAB7 /* Toto.m */; };
+		6D1D97651ACC919300CBCAB7 /* AssetTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D97641ACC919300CBCAB7 /* AssetTypeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +60,6 @@
 		6D04B9681AC301F900F41859 /* totolistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = totolistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D04B96D1AC301FA00F41859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D04B96E1AC301FA00F41859 /* totolistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = totolistTests.m; sourceTree = "<group>"; };
-		6D04B9781AC348C100F41859 /* Toto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Toto.h; path = ../Toto.h; sourceTree = "<group>"; };
-		6D04B9791AC348C100F41859 /* Toto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Toto.m; path = ../Toto.m; sourceTree = "<group>"; };
 		6D04B97D1AC3572800F41859 /* backgroundamerica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundamerica.png; sourceTree = "<group>"; };
 		6D04B97F1AC3580A00F41859 /* TotoStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TotoStore.h; sourceTree = "<group>"; };
 		6D04B9801AC3580A00F41859 /* TotoStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TotoStore.m; sourceTree = "<group>"; };
@@ -77,6 +77,11 @@
 		6D04B9CC1AC48C0600F41859 /* mid_priority.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mid_priority.png; sourceTree = "<group>"; };
 		6D04B9CE1AC48C8B00F41859 /* mid-high_priority_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mid-high_priority_filled.png"; sourceTree = "<group>"; };
 		6D04B9D01AC48C9000F41859 /* mid-high_priority.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mid-high_priority.png"; sourceTree = "<group>"; };
+		6D1D975E1ACB88DB00CBCAB7 /* Totolist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Totolist.xcdatamodel; sourceTree = "<group>"; };
+		6D1D97601ACB930700CBCAB7 /* Toto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toto.h; sourceTree = "<group>"; };
+		6D1D97611ACB930700CBCAB7 /* Toto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toto.m; sourceTree = "<group>"; };
+		6D1D97631ACC919300CBCAB7 /* AssetTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetTypeViewController.h; sourceTree = "<group>"; };
+		6D1D97641ACC919300CBCAB7 /* AssetTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetTypeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,13 +131,16 @@
 				6D04B95A1AC301F900F41859 /* DetailViewController.m */,
 				6D04B9871AC3772B00F41859 /* LHWModalInputViewController.h */,
 				6D04B9881AC3772B00F41859 /* LHWModalInputViewController.m */,
+				6D1D975D1ACB88DB00CBCAB7 /* Totolist.xcdatamodeld */,
+				6D1D97601ACB930700CBCAB7 /* Toto.h */,
+				6D1D97611ACB930700CBCAB7 /* Toto.m */,
 				6D04B9821AC3651F00F41859 /* CustomTableViewCell.h */,
 				6D04B9831AC3651F00F41859 /* CustomTableViewCell.m */,
 				6D04B9841AC3651F00F41859 /* CustomTableViewCell.xib */,
-				6D04B9781AC348C100F41859 /* Toto.h */,
-				6D04B9791AC348C100F41859 /* Toto.m */,
 				6D04B97F1AC3580A00F41859 /* TotoStore.h */,
 				6D04B9801AC3580A00F41859 /* TotoStore.m */,
+				6D1D97631ACC919300CBCAB7 /* AssetTypeViewController.h */,
+				6D1D97641ACC919300CBCAB7 /* AssetTypeViewController.m */,
 				6D04B95C1AC301F900F41859 /* Main.storyboard */,
 				6D04B95F1AC301F900F41859 /* Images.xcassets */,
 				6D04B9611AC301F900F41859 /* LaunchScreen.xib */,
@@ -288,10 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D04B97A1AC348C100F41859 /* Toto.m in Sources */,
 				6D04B9851AC3651F00F41859 /* CustomTableViewCell.m in Sources */,
+				6D1D975F1ACB88DB00CBCAB7 /* Totolist.xcdatamodeld in Sources */,
+				6D1D97621ACB930700CBCAB7 /* Toto.m in Sources */,
 				6D04B9551AC301F900F41859 /* AppDelegate.m in Sources */,
 				6D04B9581AC301F900F41859 /* MasterViewController.m in Sources */,
+				6D1D97651ACC919300CBCAB7 /* AssetTypeViewController.m in Sources */,
 				6D04B9521AC301F900F41859 /* main.m in Sources */,
 				6D04B95B1AC301F900F41859 /* DetailViewController.m in Sources */,
 				6D04B9811AC3580A00F41859 /* TotoStore.m in Sources */,
@@ -486,6 +496,7 @@
 				6D04B9741AC301FA00F41859 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D04B9751AC301FA00F41859 /* Build configuration list for PBXNativeTarget "totolistTests" */ = {
 			isa = XCConfigurationList;
@@ -494,8 +505,22 @@
 				6D04B9771AC301FA00F41859 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6D1D975D1ACB88DB00CBCAB7 /* Totolist.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6D1D975E1ACB88DB00CBCAB7 /* Totolist.xcdatamodel */,
+			);
+			currentVersion = 6D1D975E1ACB88DB00CBCAB7 /* Totolist.xcdatamodel */;
+			path = Totolist.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6D04B9441AC301F900F41859 /* Project object */;
 }

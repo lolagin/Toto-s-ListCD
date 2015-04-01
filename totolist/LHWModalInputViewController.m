@@ -107,7 +107,7 @@
             textField.placeholder = @"OMG GREAT U ADDED A ITEM LULZZ";
             textField.text = @"";
             [textField resignFirstResponder];
-            [[TotoStore sharedStore] addItemToList:[Toto initWithTitle:taskInput andDetails:taskDescriptionInput andPriority:priorityInput andCompletedBool:false]];
+//            [[TotoStore sharedStore] addItemToList:[Toto initWithTitle:taskInput andDetails:taskDescriptionInput andPriority:priorityInput andCompletedBool:false]];
             
             taskInput = nil;
             questionCount = 0;

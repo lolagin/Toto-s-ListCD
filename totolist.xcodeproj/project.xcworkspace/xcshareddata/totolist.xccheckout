@@ -10,22 +10,26 @@
 	<string>totolist</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>8EA0CB9D964B3155A07F41A8F22810C80DE725E8</key>
+		<string>https://github.com/lolagin/Toto-s-List.git</string>
 		<key>966876C146ACFA8B19AC923FB0DCD3E295065717</key>
 		<string>https://github.com/lolagin/20InchSpinnerz.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>totolist/totolist.xcodeproj</string>
+	<string>totolist.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>8EA0CB9D964B3155A07F41A8F22810C80DE725E8</key>
+		<string>../..</string>
 		<key>966876C146ACFA8B19AC923FB0DCD3E295065717</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/lolagin/20InchSpinnerz.git</string>
+	<string>https://github.com/lolagin/Toto-s-List.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>966876C146ACFA8B19AC923FB0DCD3E295065717</string>
+	<string>8EA0CB9D964B3155A07F41A8F22810C80DE725E8</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -34,7 +38,15 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>966876C146ACFA8B19AC923FB0DCD3E295065717</string>
 			<key>IDESourceControlWCCName</key>
-			<string>firstapps</string>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8EA0CB9D964B3155A07F41A8F22810C80DE725E8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>totolist</string>
 		</dict>
 	</array>
 </dict>

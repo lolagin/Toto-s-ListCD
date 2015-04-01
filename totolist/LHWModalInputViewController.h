@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LHWModalInputViewController : UIViewController
+@class Toto;
 
+@interface LHWModalInputViewController : UIViewController
+@property (strong, nonatomic)Toto *todoItem;
 
 
 

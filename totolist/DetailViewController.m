@@ -9,11 +9,13 @@
 #import "DetailViewController.h"
 #import "Toto.h"
 #import "TotoStore.h"
+#import "AssetTypeViewController.h"
 
 @interface DetailViewController ()
 @property (strong, nonatomic)UILabel *titleLabel;
 @property (strong, nonatomic)UILabel *descriptionLabel;
 @property (strong, nonatomic)UIImageView *iconView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *assTypeButton;
 @end
 
 @implementation DetailViewController
@@ -21,6 +23,14 @@
 
 
 
+- (IBAction)showAssTypePicker:(id)sender {
+    [self.view endEditing:YES];
+    
+    AssetTypeViewController *avc = [[AssetTypeViewController alloc]init];
+    [self.navigationController pushViewController:avc animated:YES];
+
+    
+}
 #pragma mark - Managing the detail item
 
 - (void)setDetailItem:(id)newDetailItem {
@@ -48,19 +58,40 @@
     }
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+//    NSString *typeLabel = [self.toto.assetType valueForKey:@"label"];
+//    if (!typeLabel) {
+//        typeLabel = @"None";
+//    }
+//    self.assTypeButton.title = [NSString stringWithFormat:@"type iz: %@",typeLabel];
+//    
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    
+    
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundamerica"]];
     self.titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(8, 73, (self.view.bounds.size.width - 16), (self.view.bounds.size.height / 4))];
     self.descriptionLabel = [[UILabel alloc]initWithFrame:CGRectMake(8, (self.view.bounds.size.height / 2), (self.view.bounds.size.width - 16), (self.view.bounds.size.height / 4))];
     self.iconView = [[UIImageView alloc]initWithFrame:CGRectMake((self.view.bounds.size.width / 2), (self.view.bounds.size.height / 2), 100, 100)];
     
+    NSString *typeLabel = [self.toto.assetType valueForKey:@"label"];
+    if (!typeLabel) {
+        typeLabel = @"None";
+    }
+    self.assTypeButton.title = [NSString stringWithFormat:@"type iz: %@",typeLabel];
     
     
     // Do any additional setup after loading the view, typically from a nib.
     [self configureView];
 }
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

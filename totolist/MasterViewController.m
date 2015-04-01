@@ -72,6 +72,8 @@
 
 -(void)modalAddView{
     LHWModalInputViewController *modalView = [[LHWModalInputViewController alloc]init];
+    
+    modalView.todoItem = [[TotoStore sharedStore] createTodoItem];
     [self.navigationController pushViewController:modalView animated:true];
 }
 
@@ -159,6 +161,7 @@ titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     DetailViewController *detailViewController = [[DetailViewController alloc] init];
+    
     NSArray *items = [[TotoStore sharedStore] allItems];
     Toto *selectedTodoItem = items[indexPath.row];
     detailViewController.toto = selectedTodoItem;
